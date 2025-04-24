@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porfolio/paolak2</title>
+    <!-- favicon  -->
+    <link rel="icon" href="images/github.svg">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Tipos de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Hoja de estilo css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <header class="contenedor-header">
+            <div class="contenedor-logo">
+                <i class="bi bi-github icon-xl"></i>
+                <p><a href="">paolak2</a></p>
+            </div>
+            <nav class="contenedor-enlaces" id="enlaces">
+                <ul>
+                    <li><a href="#"><i class="bi bi-house-heart-fill"></i>Home</a></li>
+                    <li><a href="#"><i class="bi bi-file-earmark-person"></i>About</a></li>
+                    <li><a href="#"><i class="bi bi-graph-up"></i>Projects</a></li>
+                    <li><a href="#"><i class="bi bi-layout-text-window-reverse"></i>CV</a></li>
+                    <li><a href="#"><i class="bi bi-person-rolodex"></i>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="bi bi-list"></i>
+            </div>
+        </header>
+        <div class="enlaces-2">
+            <nav class="enlaces-barra">
+                <ul>
+                    <li><a href="#"><i class="bi bi-graph-up"></i>Projects</a></li>
+                    <li><a href="#"><i class="bi bi-star"></i>Stars-Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div class="contenedor caja1">
+            <div class="contenedor-imagen">
+                <img src="img/Lisa-negro.png" alt="Foto perfil">
+                <h2>K2 KPME</h2>
+                <p>paolak2 · she/her</p>
+                <button type="submit"><a href="#">Profile</a></button>
+                <hr>
+            </div>
+        </div>
+        <div class="about caja2">
+            <div class="aside-profile box-1">aside
+                <div class="contenedor-imagen">
+                    <img src="img/Lisa-negro.png" alt="Foto perfil">
+                    <h2>K2 KPME</h2>
+                    <p>paolak2 · she/her</p>
+                    <button type="submit"><a href="#">About me</a></button>
+                    <hr>
+                </div>
+                <div class="contenedor-profile">
+                    <h3>Acerca de mi..</h3>
+                    <p>Soy Ketlin Paola Marriaga Escorcia, estoy en un viaje de crecimiento dentro del mundo del desarrollo
+                    web, con ganas de aportar soluciones innovadoras y seguir evolucionando como profesional. Si quieres
+                    saber más sobre mi trabajo o colaborar conmigo, ¡estaré encantada de conectar contigo!.
+                    </p>
+                </div>
+                <button>Contacto</button>
+            </div>
+            <div class="title box-2">
+                <h3>Titulo</h3>
+            </div>
+            <div class="container-skills box-3">Zona Skills2
+                <div class="skills-travel"></div>
+                <div class="skills-design"></div>
+                <div class="skills-books"></div>
+                <div class="skills-music"></div>
+                <br>
+                <div class="skills-caja1">HTML</div>
+                <div class="skills-caja2">CSS</div>
+                <div class="skills-caja3">JAVASCRIPT</div>
+                <div class="skills-caja4">SQL SERVER</div>
+                <div class="skills-caja5">JAVA</div>
+                <div class="skills-caja6">GIT/GITHUB</div>
+            </div>
+        </div>
+        <!-- footer hay que cambiarlo de sitio y modificarlo xq no puede ir dentro del main-->
+        <div class="footer caja3">
+            <footer>
+                <div class="container">
+                    <div class="iconosfooter">
+                        <a href="#"><i class="bi bi-arrow-up-circle"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/paolak2" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <p class="footer-texto">&copy; 2025 Quillera Portfolio. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        function mostrarOcultarMenu() {
+            // Accedemos al nav, que tiene id=’enlaces’
+            const enlaces = document.getElementById("enlaces");
+
+            // Añadimos o quitamos la clase 'responsive' para mostrar/ocultar los enlaces
+            enlaces.classList.toggle("responsive");
+        }
+    </script>
+</body>
+
+</html>

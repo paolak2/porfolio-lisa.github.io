@@ -205,7 +205,15 @@ img{
 .contenedor-imagen hr{
     color: rgba(172, 173, 173, 0.884);
 }
+
 /*about*/
+.about{
+    grid-area: caja2;
+    display: grid;
+    height: 90vh;
+    
+}
+/*about
 .about{
     grid-area: caja2;
     display: grid;
@@ -231,8 +239,10 @@ img{
 .box-3{
     grid-area: box-3;
     background-color: blanchedalmond;
-}
-/*footer*/
+}*/
+
+
+/*footer
 .caja3{
     background-color: rgba(241, 242, 243, 0.884);
     grid-area: caja3;
@@ -258,4 +268,4 @@ img{
     column-gap: 10px;
     row-gap: 5px;
     justify-content: center;
-}
+}*/

@@ -182,7 +182,7 @@ img{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contenedor-imagen button{
+.lisamain button{
     background-color:  rgba(241, 242, 243, 0.884);
     padding: 8px 44%;
     border-radius: 5px;
@@ -192,11 +192,11 @@ img{
 }
 .contenedor-imagen button:hover{
     background-color:  rgba(223, 224, 224, 0.884);
+    transition: .5s;
 }
 .contenedor-imagen a{
     text-decoration: none;
     color: black;
-    border: 1px sol
 }
 .contenedor-imagen p{
     color: rgb(164, 165, 165);
@@ -207,11 +207,111 @@ img{
 }
 
 /*about*/
-.about{
+.caja2 {
     grid-area: caja2;
     display: grid;
-    height: 90vh;
-    
+    background-color: lightskyblue;
+    border: 3px solid blue;
+    height: 100vh;
+    grid-template-columns: minmax(350px, 1fr) 3fr;
+    grid-template-rows: minmax(70px, 100px) 1fr  minmax(70px, 100px) 1fr;
+}
+.box-1{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.boton{
+    cursor: pointer;
+    background-color:  rgba(241, 242, 243, 0.884);
+    padding: 8px 151px;
+    border-radius: 5px;
+    border: 0.5px solid  rgba(172, 173, 173, 0.884);
+    margin-bottom: 20px;
+}
+.boton:hover{
+    background-color:  rgba(223, 224, 224, 0.884);
+    transition: .5s;
+}
+.contenedor-profile{
+    background-color: lightslategray;
+    padding: 20px;
+    text-align: justify;
+}
+.contenedor-profile h3{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.box-2{
+    background-color: plum;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.box-3{
+    background-color: blanchedalmond;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+}
+.skills{
+    background-color: lightcyan;
+    border: 2px solid blue;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: line-through;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* .travel{
+ background: url('../images/news-1.jpg');
+} 
+ 
+.travel {
+    background: url('../img/news-3.jpg') no-repeat center center;
+    background-size: cover;
+}*/
+.travel{
+    background: url('../img/travel.jpg') no-repeat center center;
+    background-size: cover;
+}
+.design{
+    background: url('../img/design.jpeg') no-repeat center center;
+    background-size: cover;
+}
+.books{
+    background: url('../img/book.jpeg') no-repeat center center;
+    background-size: cover;
+}
+.music{
+    background: url('../img/music3.jpg') no-repeat center center;
+    background-size: cover;
+}
+.box-4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.box-5{
+    background-color: blanchedalmond;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    gap: 10px;
+    padding-top: 10px;
+    grid-template-columns: 1fr 1fr;
 }
 /*about
 .about{

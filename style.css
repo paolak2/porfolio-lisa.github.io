@@ -159,7 +159,7 @@ main {
     max-width: 1100px;
     height: 100vh;
     margin: auto;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .contenedor{
@@ -171,7 +171,7 @@ main {
     height: 80vh;
 }
 
-img{
+.lisamain img{
     background-color: white;
     width: 350px;
     height: auto;
@@ -190,6 +190,7 @@ img{
     margin-bottom: 25px;
     cursor: pointer;
 }
+
 .contenedor-imagen button:hover{
     background-color:  rgba(223, 224, 224, 0.884);
     transition: .5s;
@@ -207,17 +208,35 @@ img{
 }
 
 /*about*/
+.aside{
+    text-align: center;
+}
+.aside h2, p{
+    text-align: left;
+}
+.aside img{
+    background-color: white;
+    width: 95%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid rgba(215, 218, 218, 0.884);
+    margin-top: 50px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 .caja2 {
     grid-area: caja2;
     display: grid;
-    background-color: lightskyblue;
-    border: 3px solid blue;
+    /*background-color: lightskyblue;
+    border: 3px solid blue;*/
     height: 100vh;
     grid-template-columns: minmax(350px, 1fr) 3fr;
-    grid-template-rows: minmax(70px, 100px) 1fr  minmax(70px, 100px) 1fr;
+    grid-template-rows: minmax(40px, 50px) 1fr  minmax(40px, 50px) 1fr;
+    gap: 25px;
+    padding-bottom: 50px;
 }
 .box-1{
-    background-color: aqua;
+    /*background-color: aqua;*/
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -229,57 +248,55 @@ img{
     padding: 8px 151px;
     border-radius: 5px;
     border: 0.5px solid  rgba(172, 173, 173, 0.884);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .boton:hover{
     background-color:  rgba(223, 224, 224, 0.884);
     transition: .5s;
 }
 .contenedor-profile{
-    background-color: lightslategray;
+    /*background-color: lightslategray;*/
     padding: 20px;
-    text-align: justify;
 }
+
 .contenedor-profile h3{
     padding-bottom: 15px;
     text-align: center;
 }
+.title p{
+    text-align: left;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
 .box-2{
-    background-color: plum;
+    /*background-color: plum;*/
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
 }
 .box-3{
-    background-color: blanchedalmond;
+    /*background-color: blanchedalmond;*/
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 10px;
 }
 .skills{
-    background-color: lightcyan;
-    border: 2px solid blue;
+    /*background-color: lightcyan;*/
+    border: 3px solid rgba(172, 173, 173, 0.884);
     padding: 25px;
     border-radius: 10px;
     text-decoration: line-through;
     font-weight: bold;
     color: #fff;
 }
-
-/* .travel{
- background: url('../images/news-1.jpg');
-} 
- 
-.travel {
-    background: url('../img/news-3.jpg') no-repeat center center;
-    background-size: cover;
-}*/
+/*imagenes galeria about me*/
 .travel{
     background: url('../img/travel.jpg') no-repeat center center;
     background-size: cover;
@@ -296,6 +313,22 @@ img{
     background: url('../img/music3.jpg') no-repeat center center;
     background-size: cover;
 }
+.caja5{
+    background: url('../img/css.jpeg') no-repeat center center;
+    background-size: cover;
+}
+.caja3{
+    background: url('../img/java.jpg') no-repeat center center;
+    background-size: cover;
+}
+.caja4{
+    background: url('../img/basedatos.jpg') no-repeat center center;
+    background-size: cover;
+}
+.caja6{
+    background: url('../img/github.jpg') no-repeat center center;
+    background-size: cover;
+}
 .box-4{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -303,13 +336,13 @@ img{
     grid-row-end: 3;
 }
 .box-5{
-    background-color: blanchedalmond;
+    /*background-color: blanchedalmond;*/
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
     display: grid;
-    gap: 10px;
+    gap: 20px;
     padding-top: 10px;
     grid-template-columns: 1fr 1fr;
 }

@@ -16,6 +16,11 @@
         rel="stylesheet">
     <!-- Hoja de estilo css -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .ampliar{
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 
 <body>
@@ -58,6 +63,7 @@
                 <hr>
             </div>
         </div>
+        <!-- about -->
         <div class="about caja2" id="aboutme">
             <div class="aside-profile box-1">
                 <div class="contenedor-imagen aside">
@@ -65,18 +71,17 @@
                     <h2>K2 KPME</h2>
                     <p>paolak2 · she/her</p>
                 </div>
-                <button class="boton">About...</button>
+                <button class="boton" id="boton-About">About...</button>
                 <hr>
                 <div class="contenedor-profile">
-                    <h3>Acerca de mi..</h3>
-                    <p>Soy Ketlin Paola Marriaga Escorcia, estoy en un viaje de crecimiento dentro del mundo del desarrollo
+                    <p id="parrafoAbout" style="display: none;">Soy Ketlin Paola Marriaga Escorcia, estoy en un viaje de crecimiento dentro del mundo del desarrollo
                     web, con ganas de aportar soluciones innovadoras y seguir evolucionando como profesional. Si quieres
                     saber más sobre mi trabajo o colaborar conmigo, ¡estaré encantada de conectar contigo!.
                     </p>
                 </div>
             </div>
             <div class="title box-2">
-                <p>Fuel for My Soul</p>
+                <h3>Fuel for My Soul</h3>
             </div>
             <div class="container-skills box-3">
                 <div class="skills travel">TRAVEL</div>
@@ -85,7 +90,7 @@
                 <div class="skills music">MUSIC</div>
             </div>
             <div class="title box-4">
-                <p>Skills</p>
+                <h3>Skills</h3>
             </div>
             <div class="container-skills box-5">
                 <div class="skills caja5">HTML/CSS/JAVASCRIPT</div>
@@ -94,22 +99,67 @@
                 <div class="skills caja6">GIT/GITHUB</div>
             </div>
         </div>
-    </main>
-    <!-- footer hay que cambiarlo de sitio y modificarlo xq no puede ir dentro del main-->
-    <!-- <div class="footer caja3"> 
-        <footer>
-            <div class="container">
-                <div class="iconosfooter">
-                    <a href="#"><i class="bi bi-arrow-up-circle"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/paolak2" target="_blank"><i class="bi bi-github"></i></a>
+        <div class="projects">
+            <div class="box-proy bp-1" id="foto1" style="background-image: url('img/fotos1.webp');">Proyecto</div>
+            <div class="box-proy bp-2" id="foto2"></div>
+            <div class="box-proy bp-3" id="foto3" style="background-image: url('img/foto3.webp');">Proyecto</div>
+            <div class="box-proy bp-4" id="foto4"></div>
+            <div class="box-proy bp-5"></div>
+            <div class="box-proy bp-6" id="foto5"></div>
+            <div class="box-proy bp-7" id="foto6" style="background-image: url('img/foto4.jpg');">Proyecto</div>
+            <div class="box-proy bp-8" id="foto7"></div>
+            <div class="box-proy bp-9" id="foto8" style="background-image: url('img/foto5.jpeg');">Proyecto</div>
+        </div>
+        <!-- footer hay que cambiarlo de sitio y modificarlo xq no puede ir dentro del main-->
+        <div class="footer"> 
+            <footer>
+                <div class="container">
+                    <div class="iconosfooter">
+                        <a href="#"><i class="bi bi-arrow-up-circle"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/paolak2" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <p class="footer-texto">&copy; 2025 Quillera Portfolio. Todos los derechos reservados.</p>
                 </div>
-                <p class="footer-texto">&copy; 2025 Quillera Portfolio. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-    </div>-->
+            </footer>
+        </div>
+    </main>
     
+    <script>
+        const array = ["foto1","foto3", "foto6","foto8"];
+        setInterval(() => {
+            const ultimo = document.getElementById(array[array.length - 1]).style.backgroundImage;
+            for (let i = array.length - 1; i > 0; i--) {
+                const actual = document.getElementById(array[i]);
+                const anterior = document.getElementById(array[i - 1]);
+                actual.style.backgroundImage = anterior.style.backgroundImage;
+                }
+            document.getElementById(array[0]).style.backgroundImage = ultimo;
+        }, 2000);
+    </script>
+    <script>
+        document.querySelectorAll(".skills").forEach(imagen => {
+            imagen.addEventListener("mouseenter", () => {
+                imagen.classList.add("ampliar");
+            });
+            imagen.addEventListener("mouseleave", () => {
+                imagen.classList.remove("ampliar");
+            });
+        });
+    </script>
+    <script>
+        const boton = document.getElementById("boton-About");
+        const parrafo = document.getElementById("parrafoAbout");
+
+        boton.addEventListener("click", () => {
+        if (parrafo.style.display === "none") {
+            parrafo.style.display = "block";
+        } else {
+            parrafo.style.display = "none";
+        }
+    });
+    </script>
     <script>
         function mostrarOcultarMenu() {
             // Accedemos al nav, que tiene id=’enlaces’
